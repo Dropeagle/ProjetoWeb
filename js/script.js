@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function atualizarProgresso() {
     let porcentagem = Math.min((pontos / meta) * 100, 100);
     progressBar.style.width = `${porcentagem}%`;
-    progressBar.setAttribute("aria-valuenow", porcentagem);
     pontosEl.textContent = `${pontos} pontos`;
 
     if (pontos >= meta) {
@@ -38,4 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
       item.style.fontWeight = "bold";
     }
   });
+
+  // ---- Ícones interativos ----
+  const btnNotificacoes = document.getElementById("btnNotificacoes");
+  if (btnNotificacoes) {
+    btnNotificacoes.addEventListener("click", () => {
+      alert("🔔 Você não tem novas notificações!");
+    });
+  }
+
+  const btnFinanceiro = document.querySelector(".bi-currency-dollar");
+  if (btnFinanceiro) {
+    btnFinanceiro.addEventListener("click", () => {
+      alert("💲 Seu saldo de pontos será convertido em prêmios em breve!");
+    });
+  }
 });
