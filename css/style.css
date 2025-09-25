@@ -18,3 +18,19 @@ body {
     font-size: 1rem;
   }
 }
+
+/* --- Swift Tema --- */
+.bg-warning,
+.btn-warning {
+  background-color: #ff6f00 !important; /* laranja Swift */
+  border-color: #ff6f00 !important;
+}
+
+.btn-warning:hover {
+  background-color: #e65c00 !important; /* tom mais escuro no hover */
+  border-color: #e65c00 !important;
+}
+
+.progress-bar.bg-warning {
+  background-color: #ff6f00 !important;
+}
