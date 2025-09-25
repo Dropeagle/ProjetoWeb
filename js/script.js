@@ -1,0 +1,1 @@
+console.log("Swift Dashboard carregado com sucesso!");
