@@ -15,9 +15,20 @@
       <a class="navbar-brand fw-bold" href="index.html">Início</a>
       <div class="d-flex align-items-center gap-3 ms-auto">
         <a href="login.html" class="btn btn-outline-danger btn-sm">Sair</a>
-        <i class="bi bi-bell fs-5" role="img" aria-label="Notificações"></i>
+        <i class="bi bi-bell fs-5" role="img" aria-label="Notificações" id="btnNotificacoes"></i>
         <i class="bi bi-currency-dollar fs-5" role="img" aria-label="Financeiro"></i>
-        <i class="bi bi-list fs-4" role="img" aria-label="Menu"></i>
+
+        <!-- Dropdown de Menu -->
+        <div class="dropdown">
+          <i class="bi bi-list fs-4" role="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false"></i>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+            <li><a class="dropdown-item" href="index.html">🏠 Início</a></li>
+            <li><a class="dropdown-item" href="home.html">📊 Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">👤 Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="login.html">🚪 Sair</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
