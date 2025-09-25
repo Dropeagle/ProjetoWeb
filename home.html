@@ -14,9 +14,10 @@
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="index.html">Início</a>
       <div class="d-flex align-items-center gap-3 ms-auto">
-        <i class="bi bi-bell fs-5"></i>
-        <i class="bi bi-currency-dollar fs-5"></i>
-        <i class="bi bi-list fs-4"></i>
+        <a href="login.html" class="btn btn-outline-danger btn-sm">Sair</a>
+        <i class="bi bi-bell fs-5" role="img" aria-label="Notificações"></i>
+        <i class="bi bi-currency-dollar fs-5" role="img" aria-label="Financeiro"></i>
+        <i class="bi bi-list fs-4" role="img" aria-label="Menu"></i>
       </div>
     </div>
   </nav>
@@ -28,9 +29,9 @@
     <!-- Pontos -->
     <div class="card mb-3">
       <div class="card-body">
-        <h5 class="card-title">1.250 pontos</h5>
+        <h5 class="card-title" id="pontos">1.250 pontos</h5>
         <div class="progress">
-          <div class="progress-bar bg-warning" style="width: 80%;"></div>
+          <div id="progress-bar" class="progress-bar bg-warning" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
     </div>
