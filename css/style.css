@@ -1,9 +1,32 @@
+:root{
+  --bgColor-page: #fcf6f0;
+  --bgColor-text: #f2d3bb;
+  --primary-color: #ff6f00;
+  --secundary-color: #e65c00;
+}
+
 body {
-  background-color: #f8f9fa;
+  background-color: var(--bgColor-page);
 }
 .card {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* DIARIA/SEMANAL - dentro dos cards */
+.bgColorTextSmall {
+  background-color: var(--bgColor-text);
+  border-radius: 5px;
+  color: var(--primary-color) !important;
+}
+
+.icon-back{
+  transition: color 0.2s;
+}
+
+.icon-back:hover{
+  cursor: pointer;
+  color: var(--primary-color) !important;
 }
 
 @media (max-width: 576px) {
@@ -20,15 +43,15 @@ body {
 
 .bg-warning,
 .btn-warning {
-  background-color: #ff6f00 !important; /* laranja Swift */
-  border-color: #ff6f00 !important;
+  background-color: var(--primary-color) !important; /* laranja Swift */
+  border-color: var(--primary-color) !important;
 }
 
 .btn-warning:hover {
-  background-color: #e65c00 !important; /* tom mais escuro no hover */
-  border-color: #e65c00 !important;
+  background-color: var(--secundary-color) !important; /* tom mais escuro no hover */
+  border-color: var(--secundary-color) !important;
 }
 
 .progress-bar.bg-warning {
-  background-color: #ff6f00 !important;
+  background-color: var(--primary-color) !important;
 }
