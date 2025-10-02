@@ -44,15 +44,20 @@ Construir o protótipo web da aplicação, com foco em:
 ## 📂 Estrutura do Projeto
 ProjetoWeb/
 │
-├── index.html → Página inicial  
-├── login.html → Tela de login  
+├── index.html → Página inicial com navbar e links para todas as páginas  
+├── login.html → Tela de login com logo da Swift  
 ├── home.html → Dashboard com barra de progresso e ranking  
+├── perfil.html → Página de perfil do usuário (vale-compras, brindes, ranking e acesso ao desenvolvimento)  
+├── desenvolvimento.html → Página de desenvolvimento com cards de progresso em trilhas  
 │
-└── assets/  
-  ├── css/style.css  
-  ├── js/script.js  
-  └── js/login.js  
-
+├── images/ → Imagens do projeto (ex: logo-swift.png, foto-do-perfil.png)  
+│
+└── css/  
+│   └── style.css → Estilos principais do projeto  
+│
+└── js/  
+    ├── script.js → Scripts gerais  
+    └── login.js → Scripts da tela de login  
 ---
 
 ✦ Desenvolvido com dedicação para o **Challenge JBS – FIAP** ✦
