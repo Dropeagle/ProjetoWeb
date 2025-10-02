@@ -58,6 +58,5 @@ ProjetoWeb/
 └── js/  
     ├── script.js → Scripts gerais  
     └── login.js → Scripts da tela de login  
----
-
+    
 ✦ Desenvolvido com dedicação para o **Challenge JBS – FIAP** ✦
