@@ -1,14 +1,11 @@
-// Mensagem inicial no console
 console.log("Swift Dashboard carregado com sucesso!");
 
-// ---- Progresso Dinâmico ----
 document.addEventListener("DOMContentLoaded", () => {
   const progressBar = document.getElementById("progress-bar");
   const pontosEl = document.getElementById("pontos");
   let pontos = 1250;
   const meta = 1500;
 
-  // Atualiza a barra de progresso conforme os pontos
   function atualizarProgresso() {
     let porcentagem = Math.min((pontos / meta) * 100, 100);
     progressBar.style.width = `${porcentagem}%`;
@@ -19,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Exemplo: aumentar pontos a cada 3s
   setInterval(() => {
     if (pontos < meta) {
       pontos += 50;
@@ -29,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarProgresso();
 
-  // ---- Ranking ----
   const rankingItems = document.querySelectorAll(".list-group-item");
   rankingItems.forEach(item => {
     if (item.textContent.includes("Roberto M")) {
@@ -38,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ---- Ícones interativos ----
   const btnNotificacoes = document.getElementById("btnNotificacoes");
   if (btnNotificacoes) {
     btnNotificacoes.addEventListener("click", () => {
